@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<monitor name="Dell E2414H" init="standard">
+
+		<controls>
+		<control id="brightness" address="0x10"/>
+		<control id="contrast" address="0x12"/>
+
+		<control id="red" address="0x16"/>
+		<control id="green" address="0x18"/>
+		<control id="blue" address="0x1A"/>
+
+		<control id="inputsource" type="list" address="0x60">
+			<value id="vga" value="0x01"/>
+			<value id="dvi" value="0x03"/>
+		</control>
+
+		<control id="dpms" address="0xd6">
+			<value id="on" value="1"/>
+			<value id="standby" value="4"/>
+			<value id="off" value="5"/>
+		</control>
+		<control id="power" type="list" address="0xe1">
+			<value id="off" value="1"/>
+			<value id="on"  value="0"/>
+		</control>
+		</controls>
+</monitor>
